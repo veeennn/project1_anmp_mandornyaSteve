@@ -1,10 +1,11 @@
-package com.example.project1_anmp
+package com.example.project1_anmp.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import com.example.project1_anmp.R
 import com.example.project1_anmp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

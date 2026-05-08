@@ -1,4 +1,4 @@
-package com.example.project1_anmp.View
+package com.example.project1_anmp.view
 
 import android.os.Bundle
 import android.widget.Toast
@@ -6,8 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.example.project1_anmp.R
+import androidx.navigation.Navigation
 import com.example.project1_anmp.databinding.FragmentLogInBinding
 
 class LogInFragment : Fragment() {
@@ -30,7 +29,7 @@ class LogInFragment : Fragment() {
 
             if (username == "student" && password == "123") {
                 val action = LogInFragmentDirections.actionDashboardFragment()
-                findNavController().navigate(action)
+                Navigation.findNavController(it).navigate(action)
             } else {
                 Toast.makeText(context, "Username atau password salah!", Toast.LENGTH_SHORT).show()
             }
