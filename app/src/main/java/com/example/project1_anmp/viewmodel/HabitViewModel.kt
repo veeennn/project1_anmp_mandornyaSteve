@@ -34,17 +34,11 @@ class HabitViewModel(application: Application) : AndroidViewModel(application) {
         if (habits == null || habits.isEmpty()) {
             return 1
         }
-        
-        var maxId = 0
-        for (habit in habits) {
-            if (habit.id > maxId) {
-                maxId = habit.id
-            }
-        }
-        return maxId + 1
+        return habits.size + 1
     }
 
     fun addHabit(habit: Habit) {
+        refresh()
         var habits = habitsLD.value
 
         if (habits == null) {

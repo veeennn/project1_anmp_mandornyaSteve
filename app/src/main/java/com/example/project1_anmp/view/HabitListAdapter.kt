@@ -51,7 +51,7 @@ class HabitListAdapter(
         }
 
         val iconRes = getIconRes(habit.iconName)
-        holder.binding.imgIcon.setImageResource(iconRes)
+        holder.binding.imageView3.setImageResource(iconRes)
 
         holder.binding.btnPlus.setOnClickListener {
             viewModel.incrementProgress(habit.id)

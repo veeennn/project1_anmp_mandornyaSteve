@@ -38,12 +38,6 @@
                         android:layout_height="match_parent"
                         app:srcCompat="@drawable/baseline_circle_24" />
 
-                    <ImageView
-                        android:id="@+id/imgIcon"
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:layout_gravity="center"
-                        app:srcCompat="@drawable/ic_launcher_foreground" />
                 </FrameLayout>
 
                 <LinearLayout
